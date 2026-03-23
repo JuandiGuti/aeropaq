@@ -1,1 +1,23 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap");
+
+:root {
+	color-scheme: light;
+	--blue-dark: #1e3a8a;
+	--blue: #2563eb;
+	--blue-light: #93c5fd;
+	--yellow: #facc15;
+	--font-title: "Poppins", "Segoe UI", Arial, sans-serif;
+	--font-subtitle: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+	--font-button: "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-subtitle);
+	background: #ffffff;
+	color: var(--blue-dark);
+}

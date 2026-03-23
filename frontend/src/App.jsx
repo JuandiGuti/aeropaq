@@ -1,9 +1,18 @@
+import Hero from './components/Hero'
+import Services from './components/Services'
+
 function App() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-slate-50">
-      <h1 className="text-2xl font-bold text-slate-800">
-        Aeropaq: Próximamente
-      </h1>
+    <div>
+      <main>
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="servicios">
+          <Services />
+        </section>
+
+      </main>
     </div>
   )
 }

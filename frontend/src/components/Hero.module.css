@@ -1,0 +1,112 @@
+.hero {
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+	background: var(--blue);
+}
+
+.slider {
+	position: absolute;
+	inset: 0;
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
+	animation: carruselFull 15s infinite;
+}
+
+.overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(30, 58, 138, 0.7);
+}
+
+.content {
+	position: relative;
+	margin: 0 auto;
+	min-height: 100vh;
+	width: 100%;
+	max-width: 72rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5rem;
+	padding: 4rem 1.5rem;
+}
+
+.copy {
+	max-width: 42rem;
+}
+
+.title {
+	margin: 0 0 24px;
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	font-family: var(--font-title);
+	color: #ffffff;
+	text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.subtitle {
+	margin: 0;
+	font-size: 1.2rem;
+	line-height: 1.7;
+	font-family: var(--font-subtitle);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.cta {
+	margin-top: 0.5rem;
+}
+
+@keyframes carruselFull {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@media (min-width: 640px) {
+	.content {
+		padding: 5rem 2.5rem;
+	}
+
+	.title {
+		font-size: 3.5rem;
+	}
+
+	.subtitle {
+		font-size: 1.35rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.content {
+		padding: 5.5rem 3rem;
+	}
+
+	.title {
+		font-size: 4rem;
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+	}
+}
