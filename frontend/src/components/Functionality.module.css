@@ -1,6 +1,7 @@
 .functionality {
-	padding: 4rem 1.5rem 4.5rem;
-	background: #ffffff;
+	padding: 2rem 1.5rem 0rem;
+	background: radial-gradient(circle at bottom, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0.98) 55%),
+		linear-gradient(180deg, rgba(226, 232, 240, 0.5), rgba(255, 255, 255, 0.9));
 }
 
 .container {
@@ -100,7 +101,7 @@
 
 @media (min-width: 640px) {
 	.functionality {
-		padding: 4.5rem 2rem 5rem;
+		padding: 2rem 2rem 2rem;
 	}
 }
 

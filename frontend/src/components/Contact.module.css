@@ -1,5 +1,5 @@
 .contact {
-	padding: 4rem 1.5rem 4.5rem;
+	padding: 2rem 1.5rem 2rem;
 	background: #ffffff;
 }
 
@@ -210,7 +210,7 @@
 
 @media (min-width: 640px) {
 	.contact {
-		padding: 4.5rem 2rem 5rem;
+		padding: 2rem 2rem 2rem;
 	}
 
 	.card {
