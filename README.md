@@ -2,6 +2,33 @@
 
 Documentacion visual del proyecto (wireframe, mockup y prototipos de flujos). Este README no incluye instrucciones de ejecucion.
 
+## Documentacion (README)
+
+a. Tecnologias y versiones.
+	- Frontend: React 19 + Vite.
+	- Estilos: CSS Modules.
+	- Herramientas: ESLint.
+	- Lenguaje: JavaScript (ES Modules).
+	- Entorno: Node.js (version LTS recomendada) y npm.
+
+b. Como ejecutar el proyecto de frontend.
+	1. Instalar dependencias.
+		- `cd frontend`
+		- `npm install`
+	2. Ejecutar en desarrollo.
+		- `npm run dev`
+	3. Abrir la URL local que muestra Vite en la terminal.
+
+c. Decisiones tecnicas relevantes (estructura de componentes, rutas, etc.)
+	- Componentes modulares por seccion, cada uno con su JSX y CSS Module.
+	- Estructura por componentes para facilitar el trabajo en equipo (eramos dos personas y asi pudimos dividir los modulos).
+	- Vite como bundler por la rapidez para levantar el proyecto, hot restart y buena carga de CSS.
+	- Composicion de secciones en una sola pagina.
+	- Single-page app sin rutas; la navegacion es por anclas a secciones.
+	- Librerias adicionales:
+		- Swiper (carrusel/slider): https://swiperjs.com/ - Documentacion oficial: https://swiperjs.com/get-started
+		- Country State City (catalogo de paises/estados/ciudades): https://www.npmjs.com/package/country-state-city
+
 ### Wireframe
 
 - Movil y desktop: https://www.figma.com/design/J6ciiCWjRB1omdsqCBqXxJ/Programacion-Web---Proyecto-1----Wireframes?node-id=0-1&t=fRD3dtzQhxVG78iD-1
