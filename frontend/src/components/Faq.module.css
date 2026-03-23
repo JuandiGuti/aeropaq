@@ -1,0 +1,104 @@
+.faq {
+	padding: 2rem 1.5rem 2rem;
+	background: #ffffff;
+}
+
+.container {
+	max-width: 72rem;
+	margin: 0 auto;
+}
+
+.title {
+	margin: 0 0 2.25rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: var(--font-title);
+	font-size: 1.35rem;
+	letter-spacing: 0.08em;
+	color: var(--blue-dark);
+}
+
+.grid {
+	display: grid;
+	gap: 1.25rem;
+}
+
+.card {
+	border-radius: 16px;
+	border: 1px solid rgba(17, 17, 17, 0.15);
+	background: #f8fafc;
+	padding: 1.5rem 1.5rem 1.4rem;
+	box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+}
+
+.questionButton {
+	width: 100%;
+	border: none;
+	background: transparent;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	text-align: left;
+	font-family: var(--font-button);
+	font-size: 0.95rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--blue-dark);
+	cursor: pointer;
+}
+
+.questionButton:focus-visible {
+	outline: 2px solid rgba(30, 58, 138, 0.4);
+	outline-offset: 4px;
+	border-radius: 8px;
+}
+
+.icon {
+	font-size: 1.2rem;
+	line-height: 1;
+	font-weight: 600;
+	color: var(--blue-dark);
+}
+
+.answerWrapper {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding-top: 0;
+	transition: max-height 0.35s ease, opacity 0.35s ease, padding-top 0.35s ease;
+}
+
+.open {
+	max-height: 260px;
+	opacity: 1;
+	padding-top: 0.75rem;
+}
+
+.answer {
+	margin: 0;
+	font-family: var(--font-subtitle);
+	font-size: 0.95rem;
+	line-height: 1.55;
+	color: rgba(15, 23, 42, 0.8);
+}
+
+@media (min-width: 640px) {
+	.faq {
+		padding: 3.5rem 2rem 2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.title {
+		font-size: 1.5rem;
+	}
+}

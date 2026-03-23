@@ -5,6 +5,7 @@ import Functionality from "./components/Functionality";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Pricing from "./components/Pricing";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         </section>
         <section id="funcionalidad">
           <Functionality />
+        </section>
+        <section id="faq">
+          <Faq />
         </section>
         <section id="pricing">
           <Pricing/>
