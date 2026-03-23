@@ -4,7 +4,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Country } from "country-state-city";
-import styles from "./Cobertura.module.css";
+import styles from "./cobertura.module.css";
 
 const codigosPermitidos = [
 	"GT",
