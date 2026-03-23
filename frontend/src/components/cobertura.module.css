@@ -1,0 +1,227 @@
+.coverage {
+	padding: 4.5rem 1.5rem 5rem;
+	background: radial-gradient(circle at top, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0.98) 55%),
+		linear-gradient(180deg, rgba(226, 232, 240, 0.5), rgba(255, 255, 255, 0.9));
+}
+
+.container {
+	max-width: 72rem;
+	margin: 0 auto;
+}
+
+.title {
+	margin: 0 0 0.75rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-family: var(--font-title);
+	font-size: 1.4rem;
+	color: var(--blue-dark);
+}
+
+.lead {
+	margin: 0 auto 2rem;
+	max-width: 32rem;
+	text-align: center;
+	font-family: var(--font-subtitle);
+	font-size: 1rem;
+	line-height: 1.6;
+	color: rgba(30, 58, 138, 0.8);
+}
+
+.searchCard {
+	background: #ffffff;
+	border-radius: 18px;
+	padding: 1.75rem 1.5rem;
+	border: 1px solid rgba(30, 58, 138, 0.15);
+	box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+	margin-bottom: 2.75rem;
+}
+
+.label {
+	display: block;
+	font-family: var(--font-button);
+	font-size: 0.85rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: rgba(30, 58, 138, 0.75);
+	margin-bottom: 0.75rem;
+}
+
+.inputWrap {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.input {
+	width: 100%;
+	border-radius: 999px;
+	border: 2px solid rgba(30, 58, 138, 0.25);
+	padding: 0.85rem 1.25rem;
+	font-family: var(--font-subtitle);
+	font-size: 1rem;
+	color: var(--blue-dark);
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input::placeholder {
+	color: rgba(15, 23, 42, 0.45);
+}
+
+.input:focus {
+	outline: none;
+	border-color: var(--blue);
+	box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+}
+
+.inputHint {
+	font-size: 0.85rem;
+	color: rgba(15, 23, 42, 0.55);
+}
+
+.message {
+	margin-top: 1.25rem;
+	padding: 0.9rem 1.1rem;
+	border-radius: 12px;
+	font-family: var(--font-subtitle);
+	font-size: 0.95rem;
+	line-height: 1.5;
+	border: 1px solid transparent;
+}
+
+.messageSuccess {
+	background: rgba(34, 197, 94, 0.12);
+	border-color: rgba(34, 197, 94, 0.35);
+	color: #166534;
+}
+
+.messageError {
+	background: rgba(239, 68, 68, 0.12);
+	border-color: rgba(239, 68, 68, 0.3);
+	color: #b91c1c;
+}
+
+.gridHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+.gridTitle {
+	margin: 0;
+	font-family: var(--font-button);
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--blue-dark);
+}
+
+.gridBadge {
+	padding: 0.35rem 0.9rem;
+	border-radius: 999px;
+	background: rgba(37, 99, 235, 0.12);
+	font-size: 0.85rem;
+	color: var(--blue-dark);
+}
+
+.grid {
+	display: none;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.carousel {
+	margin: 0 -0.25rem 0.5rem;
+}
+
+.carousel :global(.swiper) {
+	padding: 0.25rem 0.25rem 2.25rem;
+}
+
+.carousel :global(.swiper-pagination-bullet) {
+	background: rgba(30, 58, 138, 0.35);
+	opacity: 1;
+}
+
+.carousel :global(.swiper-pagination-bullet-active) {
+	background: var(--blue-dark);
+}
+
+.slide {
+	height: auto;
+}
+
+.card {
+	background: #ffffff;
+	border-radius: 16px;
+	padding: 1.1rem 1rem;
+	border: 1px solid rgba(30, 58, 138, 0.18);
+	box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
+	display: flex;
+	align-items: center;
+	gap: 0.85rem;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 18px 36px rgba(15, 23, 42, 0.16);
+}
+
+.flag {
+	width: 52px;
+	height: 36px;
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 6px 14px rgba(15, 23, 42, 0.2);
+}
+
+.country {
+	font-family: var(--font-subtitle);
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--blue-dark);
+}
+
+@media (min-width: 640px) {
+	.coverage {
+		padding: 5rem 2rem 5.5rem;
+	}
+
+	.searchCard {
+		padding: 2rem;
+	}
+
+	.carousel {
+		display: none;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1.2rem;
+	}
+}
+
+@media (min-width: 960px) {
+	.title {
+		font-size: 1.6rem;
+	}
+
+	.lead {
+		font-size: 1.05rem;
+	}
+
+	.gridHeader {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.grid {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}

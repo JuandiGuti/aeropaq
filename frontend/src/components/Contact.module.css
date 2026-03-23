@@ -1,0 +1,236 @@
+.contact {
+	padding: 4rem 1.5rem 4.5rem;
+	background: #ffffff;
+}
+
+.container {
+	max-width: 72rem;
+	margin: 0 auto;
+}
+
+.title {
+	margin: 0 0 1.25rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: var(--font-title);
+	font-size: 1.35rem;
+	letter-spacing: 0.08em;
+	color: var(--blue-dark);
+}
+
+.lead {
+	margin: 0 auto 2rem;
+	max-width: 34rem;
+	text-align: center;
+	font-family: var(--font-subtitle);
+	font-size: 1rem;
+	line-height: 1.6;
+	color: rgba(30, 58, 138, 0.78);
+}
+
+.card {
+	max-width: 38rem;
+	margin: 0 auto;
+	background: #ffffff;
+	border-radius: 18px;
+	padding: 2rem 1.75rem;
+	border: 1px solid rgba(17, 17, 17, 0.15);
+	box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.1rem;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	gap: 1.1rem;
+}
+
+.phoneRow {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 0.75rem;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.45rem;
+}
+
+.label {
+	font-family: var(--font-button);
+	font-size: 0.85rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: rgba(30, 58, 138, 0.75);
+}
+
+.input,
+.textarea {
+	width: 100%;
+	border-radius: 12px;
+	border: 1px solid rgba(30, 58, 138, 0.25);
+	padding: 0.75rem 0.9rem;
+	font-family: var(--font-subtitle);
+	font-size: 0.95rem;
+	color: var(--blue-dark);
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.select {
+	width: 100%;
+	border-radius: 12px;
+	border: 1px solid rgba(30, 58, 138, 0.25);
+	padding: 0.75rem 0.9rem;
+	font-family: var(--font-subtitle);
+	font-size: 0.95rem;
+	color: var(--blue-dark);
+	background: #ffffff;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.textarea {
+	min-height: 140px;
+	resize: vertical;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+	outline: none;
+	border-color: var(--blue);
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.alert {
+	margin-bottom: 1.1rem;
+	padding: 0.75rem 1rem;
+	border-radius: 12px;
+	background: rgba(239, 68, 68, 0.12);
+	border: 1px solid rgba(239, 68, 68, 0.3);
+	color: #b91c1c;
+	text-align: center;
+	font-family: var(--font-subtitle);
+	font-size: 0.95rem;
+}
+
+.submit {
+	border: none;
+	border-radius: 12px;
+	padding: 0.9rem 1rem;
+	font-family: var(--font-button);
+	font-size: 0.95rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--blue-dark);
+	background: var(--yellow);
+	cursor: pointer;
+	transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.submit:disabled {
+	cursor: not-allowed;
+	background: rgba(148, 163, 184, 0.6);
+	color: rgba(15, 23, 42, 0.6);
+}
+
+.submit:not(:disabled):hover {
+	background: var(--blue-dark);
+	color: #ffffff;
+	transform: translateY(-1px);
+}
+
+.modal {
+	position: fixed;
+	inset: 0;
+	background: rgba(15, 23, 42, 0.5);
+	display: grid;
+	place-items: center;
+	padding: 1.5rem;
+	z-index: 20;
+}
+
+.modalContent {
+	background: #ffffff;
+	border-radius: 18px;
+	padding: 2rem 1.75rem;
+	max-width: 26rem;
+	text-align: center;
+	box-shadow: 0 24px 48px rgba(15, 23, 42, 0.2);
+}
+
+.modalIcon {
+	width: 52px;
+	height: 52px;
+	border-radius: 999px;
+	margin: 0 auto 1rem;
+	background: rgba(34, 197, 94, 0.15);
+	color: #166534;
+	font-size: 1.4rem;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modalTitle {
+	margin: 0 0 0.75rem;
+	font-family: var(--font-button);
+	font-size: 1rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--blue-dark);
+}
+
+.modalText {
+	margin: 0 0 1.5rem;
+	font-family: var(--font-subtitle);
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: rgba(15, 23, 42, 0.75);
+}
+
+.modalButton {
+	border: none;
+	border-radius: 12px;
+	padding: 0.75rem 1.4rem;
+	font-family: var(--font-button);
+	font-size: 0.9rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: var(--blue-dark);
+	cursor: pointer;
+}
+
+@media (min-width: 640px) {
+	.contact {
+		padding: 4.5rem 2rem 5rem;
+	}
+
+	.card {
+		padding: 2.25rem 2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.row {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.phoneRow {
+		grid-template-columns: 1fr 1.4fr;
+		align-items: center;
+	}
+}
+
+@media (min-width: 1024px) {
+	.title {
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,122 @@
+.functionality {
+	padding: 4rem 1.5rem 4.5rem;
+	background: #ffffff;
+}
+
+.container {
+	max-width: 72rem;
+	margin: 0 auto;
+}
+
+.title {
+	margin: 0 0 1.25rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: var(--font-title);
+	font-size: 1.35rem;
+	letter-spacing: 0.08em;
+	color: var(--blue-dark);
+}
+
+.lead {
+	margin: 0 auto 2.25rem;
+	max-width: 38rem;
+	text-align: center;
+	font-family: var(--font-subtitle);
+	font-size: 1rem;
+	line-height: 1.6;
+	color: rgba(30, 58, 138, 0.78);
+}
+
+.carousel {
+	margin: 0 -0.25rem;
+}
+
+.carousel :global(.swiper) {
+	padding: 0.25rem 0.25rem 2.25rem;
+}
+
+.carousel :global(.swiper-pagination-bullet) {
+	background: rgba(30, 58, 138, 0.35);
+	opacity: 1;
+}
+
+.carousel :global(.swiper-pagination-bullet-active) {
+	background: var(--blue-dark);
+}
+
+.slide {
+	height: auto;
+}
+
+.grid {
+	display: none;
+	gap: 1.5rem;
+}
+
+.card {
+	position: relative;
+	border-radius: 16px;
+	background: #ffffff;
+	border: 1px solid rgba(17, 17, 17, 0.15);
+	box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+	padding: 1.75rem 1.5rem 2rem;
+	min-height: 220px;
+	text-align: left;
+}
+
+.stepCircle {
+	width: 44px;
+	height: 44px;
+	border-radius: 999px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(37, 99, 235, 0.12);
+	color: var(--blue-dark);
+	font-family: var(--font-button);
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 1.25rem;
+	border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+.cardTitle {
+	margin: 0 0 0.75rem;
+	font-family: var(--font-button);
+	font-size: 0.95rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--blue-dark);
+}
+
+.cardText {
+	margin: 0;
+	font-family: var(--font-subtitle);
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: rgba(15, 23, 42, 0.75);
+}
+
+@media (min-width: 640px) {
+	.functionality {
+		padding: 4.5rem 2rem 5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.carousel {
+		display: none;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1024px) {
+	.title {
+		font-size: 1.5rem;
+	}
+}
