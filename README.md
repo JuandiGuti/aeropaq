@@ -20,14 +20,15 @@ b. Como ejecutar el proyecto de frontend.
 	3. Abrir la URL local que muestra Vite en la terminal.
 
 c. Decisiones tecnicas relevantes (estructura de componentes, rutas, etc.)
-	- Componentes modulares por seccion, cada uno con su JSX y CSS Module.
-	- Estructura por componentes para facilitar el trabajo en equipo (eramos dos personas y asi pudimos dividir los modulos).
-	- Vite como bundler por la rapidez para levantar el proyecto, hot restart y buena carga de CSS.
-	- Composicion de secciones en una sola pagina.
-	- Single-page app sin rutas; la navegacion es por anclas a secciones.
-	- Librerias adicionales:
-		- Swiper (carrusel/slider): https://swiperjs.com/ - Documentacion oficial: https://swiperjs.com/get-started
-		- Country State City (catalogo de paises/estados/ciudades): https://www.npmjs.com/package/country-state-city
+- Componentes modulares por seccion, cada uno con su JSX y CSS Module.
+- Estructura por componentes para facilitar el trabajo en equipo (eramos dos personas y asi pudimos dividir los modulos).
+- Vite como bundler por la rapidez para levantar el proyecto, hot restart y buena carga de CSS.
+- Composicion de secciones en una sola pagina.
+- Single-page app sin rutas; la navegacion es por anclas a secciones.
+
+- Librerias adicionales:
+a. Swiper (carrusel/slider): https://swiperjs.com/ - Documentacion oficial: https://swiperjs.com/get-started
+b. Country State City (catalogo de paises/estados/ciudades): https://www.npmjs.com/package/country-state-city
 
 ### Wireframe
 
