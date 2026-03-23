@@ -34,7 +34,7 @@ const Hero = () => {
 					</p>
 				</div>
 				<div>
-					<Button>COTIZA Y ENVÍA</Button>
+					<Button href="#pricing">COTIZA Y ENVÍA</Button>
 				</div>
 			</div>
 		</section>

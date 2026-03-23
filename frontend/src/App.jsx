@@ -6,6 +6,7 @@ import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Pricing from "./components/Pricing";
 import Faq from "./components/Faq";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         </section>
         
       </main>
+      <Footer />
     </div>
   );
 }
