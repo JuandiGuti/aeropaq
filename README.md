@@ -5,19 +5,19 @@ Documentacion visual del proyecto (wireframe, mockup y prototipos de flujos). Es
 ## Documentacion (README)
 
 a. Tecnologias y versiones.
-	- Frontend: React 19 + Vite.
-	- Estilos: CSS Modules.
-	- Herramientas: ESLint.
-	- Lenguaje: JavaScript (ES Modules).
-	- Entorno: Node.js (version LTS recomendada) y npm.
+- Frontend: React 19 + Vite.
+- Estilos: CSS Modules.
+- Herramientas: ESLint.
+- Lenguaje: JavaScript (ES Modules).
+- Entorno: Node.js (version LTS recomendada) y npm.
 
-b. Como ejecutar el proyecto de frontend.
-	1. Instalar dependencias.
-		- `cd frontend`
-		- `npm install`
-	2. Ejecutar en desarrollo.
-		- `npm run dev`
-	3. Abrir la URL local que muestra Vite en la terminal.
+b. Como ejecutar el proyecto de frontend.<br>
+1. Instalar dependencias.
+	- `cd frontend`
+	- `npm install`<br>
+2. Ejecutar en desarrollo.
+	- `npm run dev`<br>
+3. Abrir la URL local que muestra Vite en la terminal.
 
 c. Decisiones tecnicas relevantes (estructura de componentes, rutas, etc.)
 - Componentes modulares por seccion, cada uno con su JSX y CSS Module.
@@ -27,8 +27,9 @@ c. Decisiones tecnicas relevantes (estructura de componentes, rutas, etc.)
 - Single-page app sin rutas; la navegacion es por anclas a secciones.
 
 - Librerias adicionales:
-a. Swiper (carrusel/slider): https://swiperjs.com/ - Documentacion oficial: https://swiperjs.com/get-started
-b. Country State City (catalogo de paises/estados/ciudades): https://www.npmjs.com/package/country-state-city
+	- Swiper (carrusel/slider): https://swiperjs.com/
+		- Documentacion oficial: https://swiperjs.com/get-started
+	- Country State City (catalogo de paises/estados/ciudades): https://www.npmjs.com/package/country-state-city
 
 ### Wireframe
 
@@ -38,6 +39,10 @@ b. Country State City (catalogo de paises/estados/ciudades): https://www.npmjs.c
 
 - Movil: https://www.figma.com/proto/cbDOyqWDD8jeqB5FZat4B2/Programacion-Web---Proyecto-1----Movil-Mockup?node-id=4002-74&p=f&t=rPXtX9t4QdClvzwZ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4002%3A74
 - Desktop: https://www.figma.com/proto/D3DFmW2wdV2jjce3CZ0G1s/Programacion-Web---Proyecto-1----Desktop-Mockup?node-id=2021-16&p=f&t=AKUrOY20KEt32qFb-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2021%3A16
+
+### Hoja de Calculo (Contactos)
+
+- Link: https://docs.google.com/spreadsheets/d/1mDUt6178FNRrCniIoipTwF1DSIGLMEojoPtmoD0-PBg/edit?usp=sharing
 
 ### Prototipo de flujos
 
